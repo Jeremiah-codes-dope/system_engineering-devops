@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Using the command you learned in the previous exercise (Task 1: “List Your Processes”), 
+writing a Bash script that displays only the lines containing the word bash.mat
+
+ps -ef | grep bash
