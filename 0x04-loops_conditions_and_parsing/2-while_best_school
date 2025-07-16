@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Printing Best School using the while loop
 counter=10
-while [$counter -gt 0]
-  do
-echo "Best School"
-counter=$((counter - 1))
+while ["$counter" -gt 0]
+do
+  echo "Best School"
+  counter=$((counter - 1))
 done
