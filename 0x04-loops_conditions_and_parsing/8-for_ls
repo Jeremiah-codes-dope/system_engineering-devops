@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 # Write a Bash script that displays:The content of the current directory.In a list format (one item per line).Where only the part of the name after the first dash (-) is displayed (refer to the example for clarity).
 for file in *; do
-  # Skip hidden files (the glob * doesn't match hidden files by default, but just to be safe)
   if [[ -e "$file" ]]; then
-    # Extract the part after the first dash
-    part_after_dash="${file#*-}"
-    
-    # Only print if there was a dash (to avoid printing full name when no dash)
     if [[ "$file" == *-* ]]; then
-      echo "$part_after_dash"
+      # Print part after first dash
+      echo "${file#*-}"
+    else
+      # Print full filename if no dash
+      echo "$file"
     fi
   fi
 done
