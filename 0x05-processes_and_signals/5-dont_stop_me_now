@@ -3,5 +3,6 @@
 
 pids=$(pgrep -f 4-to_infinity_and_beyond)
 if [ -n "$pids" ]; then
-  kill $pids
+  # Use xargs to safely pass all PIDs to kill
+  echo "$pids" | xargs kill
 fi
