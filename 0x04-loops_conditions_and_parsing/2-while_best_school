@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+counter=10
+while [$counter -gt 0]
+  then
+echo "Best School"
+counter=$((counter - 1))
+done
