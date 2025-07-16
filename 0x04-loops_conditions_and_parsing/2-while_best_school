@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Printing Best School using the while loop
 counter=10
 while [$counter -gt 0]
   then
